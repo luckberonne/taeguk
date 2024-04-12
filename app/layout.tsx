@@ -13,10 +13,6 @@ export const metadata: Metadata = {
 		template: `%s - ${siteConfig.name}`,
 	},
 	description: siteConfig.description,
-	themeColor: [
-		{ media: "(prefers-color-scheme: light)", color: "white" },
-		{ media: "(prefers-color-scheme: dark)", color: "black" },
-	],
 	icons: {
 		icon: "/favicon.ico",
 		shortcut: "/favicon-16x16.png",
@@ -30,7 +26,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="es" suppressHydrationWarning>
 			<head />
 			<body
 				className={clsx(
