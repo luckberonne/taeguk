@@ -5,23 +5,25 @@ import FloatingNav from "@/components/ui/floatingNav";
 export const Navbar = () => {
 	const navItems = [
 		{
-		  name: "Home",
-		  link: "/",
-		  icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+			name: "Inicio",
+			link: "/",
+			icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
 		},
 		{
-		  name: "About",
-		  link: "/about",
-		  icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+			name: "Contacto",
+			link: "/contact",
+			icon: (
+				<IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+			),
 		},
 		{
-		  name: "Contact",
-		  link: "/contact",
-		  icon: (
-			<IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-		  ),
+			name: "Galeria",
+			link: "/galery",
+			icon: (
+				<IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+			),
 		},
-	  ];
+	];
 	return (
 		<div className="relative  w-full">
 			<FloatingNav navItems={navItems} />

@@ -10,14 +10,14 @@ import landingDark from "./../../assets/landingDark.svg";
 
 export default function Landing() {
     return (
-        <section className="grid lg:grid-cols-2 md:grid-col-1 mt-4">
+        <section id="#inicio" className="grid lg:grid-cols-2 md:grid-col-1 mt-4">
             <div className="col-span-1 flex flex-col justify-center">
                 <div className="max-w-lg">
                     <h1 className={title()}>Escuela de Taekondo&nbsp;</h1>
                     <h1 className={title({ color: "blue" })}>TAE GUK&nbsp;</h1>
                     <br />
                     <h2 className={subtitle({ class: "mt-4" })}>
-                        Entrena, fast and modern React UI library.
+                        Entrena con el Sabon  Rodolfo.
                     </h2>
 
                     <div className="flex gap-3">
@@ -26,15 +26,15 @@ export default function Landing() {
                             href={siteConfig.links.docs}
                             className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
                         >
-                            Documentation
+                            WPP
                         </Link>
                         <Link
                             isExternal
                             href={siteConfig.links.github}
                             className={buttonStyles({ variant: "bordered", radius: "full" })}
                         >
-                            <GithubIcon size={20} />
-                            GitHub
+                            {/* <GithubIcon size={20} /> */}
+                            Direccion
                         </Link>
                     </div>
                 </div>

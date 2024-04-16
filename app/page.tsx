@@ -1,20 +1,24 @@
 "use client";
+import About from "@/components/sections/about";
 import Landing from "@/components/sections/landing";
 import Values from "@/components/sections/values";
+import History from "@/components/sections/history";
 
 
 export default function Home() {
-	
-	return (
-		<section>
-			<Landing />
-			<Values />
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore debitis, excepturi, est incidunt dolorum fugit tempora quisquam aut, error atque accusantium. Obcaecati odit optio soluta quisquam accusantium dolorum distinctio atque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore debitis, excepturi, est incidunt dolorum fugit tempora quisquam aut, error atque accusantium. Obcaecati odit optio soluta quisquam accusantium dolorum distinctio atque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore debitis, excepturi, est incidunt dolorum fugit tempora quisquam aut, error atque accusantium. Obcaecati odit optio soluta quisquam accusantium dolorum distinctio atque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore debitis, excepturi, est incidunt dolorum fugit tempora quisquam aut, error atque accusantium. Obcaecati odit optio soluta quisquam accusantium dolorum distinctio atque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore debitis, excepturi, est incidunt dolorum fugit tempora quisquam aut, error atque accusantium. Obcaecati odit optio soluta quisquam accusantium dolorum distinctio atque.</p>
 
+	return (
+		<section >
+			<div className="sm:h-[100vh] px-6 pb-10 bg-gradient-to-b from-background to-backgroundMore from-70% to-90%">
+				<Landing />
+			</div>
+			<div className="bg-backgroundMore">
+				<div className="px-6 py-4">
+					<About />
+					<History />
+					<Values />
+				</div>
+			</div>
 		</section>
 	);
 }
