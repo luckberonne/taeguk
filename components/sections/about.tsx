@@ -3,7 +3,6 @@ import { title, subtitle } from "@/components/primitives";
 import Image from "next/image";
 import escuela from "./../../assets/escuela.jpg";
 import { motion } from "framer-motion";
-import { useInView } from 'framer-motion';
 
 
 export default function About() {

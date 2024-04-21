@@ -61,8 +61,8 @@ export default function Landing() {
                     </div>
                 </motion.div>
             </div>
-            <div className="col-span-1 hidden lg:block">
-                <div className=" w-[25rem] ml-20">
+            <div className="col-span-1 flex items-center justify-center">
+                <div className=" w-[25rem]">
                     <CardContainer className="inter-var">
                         <CardBody className=" relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6">
                             <CardItem translateZ="100" className="w-full mt-4">

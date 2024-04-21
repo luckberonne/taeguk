@@ -1,6 +1,7 @@
 
 import { title, subtitle } from "@/components/primitives";
 import { motion } from "framer-motion";
+import escuela2 from "./../../assets/escuela2.jpg";
 import Image from "next/image";
 
 export default function History() {
@@ -21,8 +22,8 @@ export default function History() {
                         initial={{ x: 100 }}
                         whileInView={{  x: 0 }}
                         transition={{ ease: "easeOut", duration: 0.5 }}className="col-span-1 hidden lg:block pl-8 pb-8">
-                <img
-                    src="https://th.bing.com/th/id/OIP.wAqGTp00pd4FsksR2z4HXQHaE8?rs=1&pid=ImgDetMain"
+                <Image
+                    src={escuela2}
                     alt="escuela"
                     className="shadow-lg rounded-lg w-full h-full"
                 />
