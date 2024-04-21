@@ -1,4 +1,6 @@
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { FaHome } from "react-icons/fa";
+import { MdMessage } from "react-icons/md";
+import { FaPhotoVideo } from "react-icons/fa";
 import FloatingNav from "@/components/ui/floatingNav";
 
 
@@ -7,20 +9,20 @@ export const Navbar = () => {
 		{
 			name: "Inicio",
 			link: "/",
-			icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+			icon: <FaHome />
 		},
 		{
 			name: "Contacto",
 			link: "/contact",
 			icon: (
-				<IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+				<MdMessage />
 			),
 		},
 		{
 			name: "Galeria",
 			link: "/galery",
 			icon: (
-				<IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+				<FaPhotoVideo />
 			),
 		},
 	];

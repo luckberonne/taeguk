@@ -1,7 +1,6 @@
 "use client";
 import About from "@/components/sections/about";
 import Landing from "@/components/sections/landing";
-import Values from "@/components/sections/values";
 import History from "@/components/sections/history";
 
 
@@ -16,7 +15,6 @@ export default function Home() {
 				<div className="px-6 py-4">
 					<About />
 					<History />
-					<Values />
 				</div>
 			</div>
 		</section>
