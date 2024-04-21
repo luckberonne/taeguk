@@ -9,7 +9,7 @@ export default function About() {
     return (
         <section className="grid lg:grid-cols-2 md:grid-col-1 mt-4">
             <motion.div 
-                            initial={{ x: -100 }}
+                            initial={{ x: 100 }}
                             whileInView={{  x: 0 }}
                             transition={{ ease: "easeOut", duration: 0.5 }}
             className="col-span-1 hidden lg:block pr-8">

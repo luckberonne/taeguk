@@ -34,6 +34,7 @@ module.exports = {
           colors: {
             background: '#C3F4FD', 
             backgroundMore: '#f4fdff',
+            cardColor: '#FFF',
             text: '#000',
           },
         },
@@ -41,6 +42,7 @@ module.exports = {
           colors: {
             background: '#0c2837',
             backgroundMore: '#08344c',
+            cardColor: '#000',
             text: '#FFF',
           },
         },
