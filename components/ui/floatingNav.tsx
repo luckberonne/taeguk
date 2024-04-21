@@ -7,7 +7,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "@/utils/cn";
-import Link from "next/link";
+import { Link } from "@nextui-org/link";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -31,7 +31,7 @@ const FloatingNav = ({
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-      
+
       if (scrollYProgress.get() < 0) {
         setVisible(false);
       } else {
@@ -75,13 +75,19 @@ const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>                            
-            <FaWhatsapp size={20}/>
-          </span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button>
-			  <ThemeSwitch />
+        <Link
+          isExternal
+          href="https://api.whatsapp.com/send?phone=595975922925&text=Hola,%20me%20gustar%C3%ADa%20inscribirme%20en%20las%20clases%20de%20taekwondo!!!%F0%9F%A5%8B"
+        >
+          <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+            <span>
+              <FaWhatsapp size={20} />
+            </span>
+            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+          </button>
+
+        </Link>
+        <ThemeSwitch />
 
       </motion.div>
     </AnimatePresence>

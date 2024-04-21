@@ -2,6 +2,7 @@
 import About from "@/components/sections/about";
 import Landing from "@/components/sections/landing";
 import History from "@/components/sections/history";
+import { Contact } from "@/components/sections/contact";
 
 
 export default function Home() {

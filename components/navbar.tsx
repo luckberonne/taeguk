@@ -13,7 +13,7 @@ export const Navbar = () => {
 		},
 		{
 			name: "Contacto",
-			link: "/contact",
+			link: "/news",
 			icon: (
 				<MdMessage />
 			),

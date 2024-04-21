@@ -33,6 +33,7 @@ module.exports = {
         light: {
           colors: {
             background: '#C3F4FD', 
+            backgroundMore: '#f4fdff',
             text: '#000',
           },
         },

@@ -38,7 +38,7 @@ export default function Landing() {
 
                             <Link
                                 isExternal
-                                href={siteConfig.links.docs}
+                                href="https://api.whatsapp.com/send?phone=595975922925&text=Hola,%20me%20gustar%C3%ADa%20inscribirme%20en%20las%20clases%20de%20taekwondo!!!%F0%9F%A5%8B"
                                 className={buttonStyles({ color: "success", radius: "full", variant: "shadow" })}
                             >
                                 <FaWhatsapp size={24} />
@@ -52,7 +52,7 @@ export default function Landing() {
                             whileTap={{ scale: 0.9 }}>
                             <Link
                                 isExternal
-                                href={siteConfig.links.github}
+                                href="https://maps.app.goo.gl/vxwR7r3bcwAo6gM86"
                                 className={buttonStyles({ variant: "bordered", radius: "full" })}
                             >
                                 <FaLocationDot size={24} />
